@@ -1,11 +1,12 @@
-import './reset.css'
-import PokemonCard from './components/PokemonCard.tsx'
+import "./App.css";
+
+import MyTitle from "./components/MyTitle.tsx";
 
 function App() {
   return (
-    <div className="App">
-      <PokemonCard />
-    </div>
+    <section>
+      <MyTitle />
+    </section>
   );
 }
 
