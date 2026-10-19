@@ -1,5 +1,5 @@
 import './reset.css'
-import PokemonCard from './components/PokemonCard.tsx'
+import PokemonCard from './components/PokemonCard'
 
 function App() {
   return (
