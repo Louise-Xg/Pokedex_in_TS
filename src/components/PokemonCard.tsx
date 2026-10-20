@@ -5,8 +5,7 @@ type pokemonprops = {
 }
 
 function PokemonCard({pokemon}:pokemonprops) {
-  console.log(pokemon);
-
+  
   return (
     pokemon.imgSrc !== undefined ? (
       <figure>
