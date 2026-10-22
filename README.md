@@ -1,75 +1,43 @@
-# React + TypeScript + Vite
+# Pokédex React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Présentation du projet
+Cadre : Formation DWWM. Ce projet a été réalisé dans le cadre d'un apprentissage de React avec TypeScript.
 
-Currently, two official plugins are available:
+L'objectif est de créer un petit Pokédex permettant d'afficher différents Pokémon et de choisir lequel afficher grâce à des boutons dans un environnement React.
+Pour cela, il a été nécessaire d'avancer étape par étape : main, components.1, components.2, props.1 et enfin props.2. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Objectifs pédagogiques
 
-## React Compiler
+Ce projet permet de travailler les notions suivantes :
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- démarrer un projet React avec Vite;
+- créer un composant React;
+- afficher des données dans un composant;
+- utiliser des props;
+- utiliser un state;
+- utiliser TypeScript.
 
-## Expanding the ESLint configuration
+## Fonctionnalités
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+L'application permet :
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- d'afficher un Pokémon ;
+- d'afficher son nom et son image lorsqu'elle est disponible;
+- d'afficher `???` lorsqu'aucune image n'est disponible;
+- de choisir entre Bulbasaur et Mew grâce à des boutons;
+- de mettre à jour le Pokémon affiché à l'aide d'un state React.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Technologies utilisées
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- Vite
+- CSS
+- npm
 
-```
+## Problèmes ou difficultés rencontrés
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+- Conversion du JS en TS ! 
+- Erreur de syntaxe entre le `return()` et la condition d'écriture en ternaire, on ne garde pas `{}` dans le `return()`. 
+- Erreur de syntaxe sur la déclaration des paramètres dans la fonction lorsqu'il s'agit d'un objet, le `{}` est important ! 
+- Manque de clareté sur l'utilisation du usestate mais merci au live-coding ! 
