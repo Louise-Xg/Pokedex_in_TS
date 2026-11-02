@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./reset.css";
 import "./App.css";
 import PokemonCard from "./components/PokemonCard.tsx";
+import MyComponent from "./components/MyComponent.tsx";
 
 const pokemonList = [
   {
@@ -40,6 +41,8 @@ function App() {
 
   return (
     <div>
+      {/* <MyComponent /> */}
+
       <nav>
         {pokemonList.map((pokemon) => (
           <button
