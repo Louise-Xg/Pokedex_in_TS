@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./reset.css";
 import "./App.css";
 import PokemonCard from "./components/PokemonCard.tsx";
@@ -38,6 +38,10 @@ function App() {
   if (pokemon == null) {
     throw new Error("Invalid pokemon name");
   }
+
+  useEffect(() => {
+    alert("hello pokemon trainer :)");
+  }, []);
 
   return (
     <div>
