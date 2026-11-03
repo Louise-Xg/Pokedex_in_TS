@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./reset.css";
 import "./App.css";
 import PokemonCard from "./components/PokemonCard.tsx";
+import NavBar from "./components/NavBar.tsx";
 
 const pokemonList = [
   {
@@ -40,19 +41,8 @@ function App() {
 
   return (
     <div>
-      <nav>
-        {pokemonList.map((pokemon) => (
-          <button
-            key={pokemon.name} //keeping list items in order, here each pokemon is associated to an img+name
-            type="button"
-            onClick={() => setPokemonName(pokemon.name)} //by adding this, the img + name of the pokemon change (they do not stay as bulbasaur despite clicking on other buttons)
-          >
-            {pokemon.name}
-          </button>
-        ))}
-      </nav>
+      <NavBar setPokemonName={setPokemonName} pokemonList={pokemonList} />
       <PokemonCard pokemon={pokemon} />
-      {/* //a rendered list: a list of elements from an array */}
     </div>
   );
 }
