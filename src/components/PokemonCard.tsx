@@ -1,20 +1,22 @@
 import style from "./PokemonCard.module.css";
 
-type pokemonprops = {
+type PokemonProps = {
   pokemon: {
     name: string;
     imgSrc?: string;
-  }; //? for optional
+  };
 };
 
-function PokemonCard({ pokemon }: pokemonprops) {
+function PokemonCard({ pokemon }: PokemonProps) {
   return pokemon.imgSrc !== undefined ? (
-    <figure>
+    <figure className={`${style.card} ${style[pokemon.name]}`}>
       <img className={style.avatar} src={pokemon.imgSrc} alt={pokemon.name} />
-      <figcaption>{pokemon.name}</figcaption>
+      <figcaption className={`${style.card_legend} ${style[pokemon.name]}`}>
+        {pokemon.name}
+      </figcaption>
     </figure>
   ) : (
-    <figure>
+    <figure className={`${style.card} ${style[pokemon.name]}`}>
       <p>???</p>
       <figcaption>{pokemon.name}</figcaption>
     </figure>

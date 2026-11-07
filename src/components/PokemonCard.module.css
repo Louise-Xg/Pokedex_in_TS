@@ -1,4 +1,35 @@
+.card {
+  width: 12rem;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.card_legend {
+  margin: 0.8rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
 .avatar {
-  border-radius: 50%;
-  background-color: black;
+  width: 200px;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.bulbasaur {
+  background-color: lightgreen;
+}
+
+.charmander {
+  background-color: lightsalmon;
+}
+
+.squirtle {
+  background-color: lightblue;
+}
+
+.pikachu {
+  background-color: khaki;
 }
