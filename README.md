@@ -8,7 +8,7 @@ L'objectif est de créer un petit Pokédex permettant d'afficher différents Pok
 
 Le projet a été construit petit à petit, en ajoutant progressivement de nouvelles notions : création de composants, props, state, affichage avec `map()`, partage du state entre composants, événements et CSS Modules.
 
-Pour cela, il a été nécessaire d'avancer étape par étape à travers différentes branches : main, components.1, components.2, props.1, props.2, state.1, rendering-list.1, state.2 et enfin events.1.
+Pour cela, il a été nécessaire d'avancer étape par étape à travers différentes branches : main, components.1, components.2, props.1, props.2, state.1, rendering-list.1, css, state.2 et enfin events.1.
 
 ## Objectifs pédagogiques
 
